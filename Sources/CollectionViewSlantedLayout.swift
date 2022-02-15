@@ -206,7 +206,7 @@ import UIKit
     }
 
     /// :nodoc:
-    fileprivate func invalidate() {
+    open func invalidate() {
         invalidateCache()
         updateRotationAngle()
         invalidateLayout()
