@@ -218,6 +218,11 @@ import UIKit
         cachedContentSize = 0
     }
 
+     /// :nodoc:
+    override open func invalidateLayout() {
+        super.invalidateLayout()
+        self.cachedAttributes.removeAll()
+    }
 }
 
 // MARK: CollectionViewLayout methods overriding
